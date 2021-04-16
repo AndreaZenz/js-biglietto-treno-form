@@ -1,0 +1,117 @@
+*{
+    padding:0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+.container{
+    width: 1624px;
+    margin: auto;
+}
+.out-padding{
+    padding-top: 200px;
+}
+
+body{
+    background-color: #b91450;
+}
+.title{
+    color: white;
+    text-align: center;
+}
+
+.section{
+    background-color: white;
+    margin: auto;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    border-radius: 25px;
+    width: 60%;
+}
+
+.title-section{
+    display: flex;
+    justify-content: space-around;
+}
+
+.title-section h3{
+    margin:20px 0;
+    display: inline-block;
+    color:#b91450;
+}
+
+.input-fields{
+    display: inline-block;
+    border: 1px solid #b91450 ;
+    border-radius: 4px;
+    padding: 3px;
+}
+
+#form-data{
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+}
+
+
+#button-form{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+#button-form button{
+    margin: 55px 20px 20px 20px;
+    padding: 6px;
+    color: #b91450;
+    font-size: 16px;
+    font-weight: 500;
+}
+.biglietto{
+    display: flex;
+}
+.padding-20{
+    padding: 20px;
+}
+.train-section{
+    background-color: white;
+    margin: auto;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    height: 270px;
+    width: 60%;
+}
+
+.name-box h3, .m-left{
+    margin-left: 20px;
+    padding-top: 5px;
+    font-size: 20px;
+}
+.name-box{
+    display: inline-block;
+    height: 200px;
+    width: 200px;
+    background-color: #808080;
+}
+.result-fields{
+    display: flex;
+    flex-basis: calc(100% - 200px);
+}
+.parametri-result{
+    border-top: 1px solid grey;
+    border-bottom: 1px solid grey;
+    display: flex;
+    flex-basis: 100%;
+    justify-content: space-around;
+}
+.parametri-result h3{
+    padding: 10px;
+}
+.result{
+    position: relative;
+}
+.result p{
+    position: absolute;
+    bottom: 60px;
+    font-weight: 500;
+}
