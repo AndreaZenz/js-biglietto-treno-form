@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;1,100;1,400&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <title>BooleanRails</title>
+</head>
+
+<body>
+    <header>
+    </header>
+
+    <main>
+        <div class="container out-padding">
+            <h1 class="title">CALCOLA IL PREZZO DEL TUO BIGLIETTO</h1>
+            <div class="section">
+                <div class="title-section">
+                    <h3>Nome cognome</h3>
+                    <h3>Km da percorrere</h3>
+                    <h3>Fascia d'età</h3>
+                </div>
+
+                <div class="km">
+                    <form action="submit" id="field-form">
+                        <div id="form-data">
+                            <input type="text" class="input-fields" id="userName" name="nome-cognome" placeholder="Nome e Cognome">
+    
+                            <input type="text" class="input-fields" id="km" name="Km" placeholder="Quantità di km da percorrere">
+    
+                            <select class="input-fields" id="fascia-eta" name="fascia-eta">
+                                <option value="minorenne">Minorenne</option>
+                                <option value="senior">Over 65</option>
+                                <option value="norm" selected>Età tra 18 e 65 anni</option>
+                            </select>
+                        </div>
+
+
+                        <div id="button-form">
+                            <button type="submit">Genera</button>
+                            <button type="reset">Annulla</button>
+                        </div>
+                    </form>
+
+                </div>
+            </div>
+        </div>
+        <div class="container">
+            <h1 class="title">IL TUO BIGLIETTO</h1>
+            <div class="train-section">
+
+                <div class="padding-20">
+                    <h3>DETTAGLIO PASSEGGERI</h3>
+                    <div class="biglietto">
+                        <div class="name-box">
+                            <h3>NOME</h3>
+                            <h3>PASSEGGERO</h3>
+                            <h3 id="nomeUsername"></h3>
+                        </div>
+                        <h3 id="nomePasseggero"></h3>
+                        <div class="result-fields">
+                            <div class="parametri-result">
+                                <div class="result">
+                                    <h3 class="offerta">Offerta</h3>
+                                    <p id="tipoOfferta"></p>
+                                </div>
+                                <div class="result">
+                                    <h3>Carrozza</h3>
+                                    <p id="carrozza"></p>
+                                </div>
+                                <div class="result">
+                                    <h3>Codice <br>CP</h3>
+                                    <p id="codiceCp"></p>
+                                </div>
+                                <div class="result">
+                                    <h3>Costo <br> biglietto</h3>
+                                    <p id="costoBiglietto"></p>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+    </main>
+
+    <script src="javascript.js"></script>
+</body>
+
+</html>
